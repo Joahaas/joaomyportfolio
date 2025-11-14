@@ -884,16 +884,16 @@ body.projects-active .back-button {
 
 .projects-carousel {
     position: relative;
-    width: 740px;
-    height: 470px;
+    width: 600px;
+    height: 380px;
     transform-style: preserve-3d;
     will-change: transform;
 }
 
 .project-card {
     position: absolute;
-    width: 740px;
-    height: 470px;
+    width: 600px;
+    height: 380px;
     border-radius: 18px;
     overflow: visible;
     cursor: pointer;
@@ -1056,6 +1056,7 @@ body.projects-active .project-details {
     justify-content: center;
 }
 
+
 .keyword {
     padding: 0.4rem 0.9rem;
     background: rgba(255, 255, 255, 0.1);
@@ -1072,6 +1073,18 @@ body.projects-active .project-details {
 .keyword:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 1600px) {
+    .projects-carousel {
+        width: 900px;
+        height: 580px;
+    }
+
+    .project-card {
+        width: 900px;
+        height: 580px;
+    }
 }
 
 /* Hide header elements when projects active */
