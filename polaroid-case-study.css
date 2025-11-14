@@ -312,6 +312,8 @@ body.white-mode .back-button {
 
 .project-image-container iframe {
     border: none;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 /* Content Sections */
