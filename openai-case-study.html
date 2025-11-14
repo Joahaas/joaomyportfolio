@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI New Features Case Study - João Fonseca</title>
+    <link rel="icon" type="image/svg+xml" href="assets/flavicon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="openai-case-study.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="space-background">
+        <video id="spaceVideo" loop muted playsinline autoplay>
+            <source id="videoSource" src="assets/Eu_Day.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Back Button -->
+    <a href="index.html#projects" class="back-button" aria-label="Back to projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back to Projects</span>
+    </a>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch" id="themeSwitch" aria-label="Toggle theme">
+        <div class="switch-track">
+            <div class="switch-option" data-theme="0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="switch-slider"></div>
+        </div>
+    </div>
+
+
+    <!-- Case Study Content -->
+    <div class="case-study-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="project-title">OpenAI</h1>
+            <p class="project-tagline">Enhancing AI productivity through intuitive design.</p>
+            
+            <div class="project-meta-hero">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Benchmarking & UI Design</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">Jan 2025 - Feb 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Possible Impact</span>
+                    <span class="meta-value">Improved productivity</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Video -->
+        <section class="image-section">
+            <div class="project-image-container no-border" style="padding: 0; position: relative; overflow: hidden;">
+                <video 
+                    class="project-image"
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    style="width: 100%; height: 100%; display: block; object-fit: cover;">
+                    <source src="assets/openai_feature.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Case Study Navigation -->
+        <nav class="case-study-nav">
+            <ul class="nav-list">
+                <li><a href="#overview" class="nav-item">Overview</a></li>
+                <li><a href="#process" class="nav-item">Process</a></li>
+                <li><a href="#challenge" class="nav-item">Challenge</a></li>
+                <li><a href="#goal" class="nav-item">Goal</a></li>
+                <li><a href="#research" class="nav-item">Research</a></li>
+                <li><a href="#solution" class="nav-item">Solution</a></li>
+                <li><a href="#prototypes" class="nav-item">Prototypes</a></li>
+                <li><a href="#results" class="nav-item">Results</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <p class="section-text">
+                OpenAI's new features focus on enhancing user productivity and making AI interactions more intuitive. 
+                I led the benchmarking process and UI design for new dashboard features that help users analyze and 
+                digest AI outputs more effectively.
+            </p>
+            <div class="tags">
+                <span class="tag">AI/LLM</span>
+                <span class="tag">Research</span>
+                <span class="tag">Dashboard</span>
+                <span class="tag">Productivity</span>
+            </div>
+        </section>
+
+        <!-- Design Process - Compact Version -->
+        <section id="process" class="content-section">
+            <h2 class="section-title">Design Process</h2>
+            <div class="process-image-container">
+                <img src="assets/design_process_openai.png" alt="Design Process" class="process-image">
+                <!-- Replace with: <img src="assets/design-process.png" alt="Design Process" class="process-image"> -->
+            </div>
+            <p class="section-footnote">The highlighted phases in black are the ones I lead</p>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="challenge" class="content-section">
+            <h2 class="section-title">The Challenge</h2>
+            <p class="section-text">
+                Users struggled to manage and analyze large volumes of AI-generated content. The existing interface 
+                lacked proper organization tools and made it difficult to track conversation history and insights 
+                across multiple sessions.
+            </p>
+            <div class="highlight-box">
+                <h3 class="highlight-title">Key Problems Identified</h3>
+                <ul class="highlight-list">
+                    <li>Context overload in long prompts</li>
+                    <li>No easy way to save or retrieve key insights</li>
+                    <li>Lack of tools to remix or build on ideas</li>
+                    <li>Inefficient, disorganized AI workflows</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Goal Section -->
+        <section id="goal" class="content-section">
+            <h2 class="section-title">The Goal</h2>
+            <div class="goal-box">
+                <p class="goal-text">Streamline the user’s interaction with ChatGPT by enabling better organization, retrieval, and reuse of information. Reducing friction in long conversations and boosting creative productivity.</p>
+            </div>
+        </section>
+
+        <!-- Research & Findings -->
+        <section id="research" class="content-section">
+            <h2 class="section-title">Research & Findings</h2>
+            <p class="section-text">
+                We conducted extensive research to understand user needs and pain points with AI productivity tools.
+            </p>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-title">Benchmarking</h3>
+                    <p class="research-text">Analyzed competitor tools like Google Gemini, Claude, Grok and Microsoft Copilot to identify best practices and opportunities for differentiation.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">User Interviews</h3>
+                    <p class="research-text">Interviewed 30+ power users to understand their workflows and pain points with AI tools.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Usage Analytics</h3>
+                    <p class="research-text">Analyzed usage data from 10,000+ users to identify common patterns and friction points.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Personas</h3>
+                    <p class="research-text">Created 3 personas to represent the different user groups we interviewed.</p>
+                </div>
+            </div>
+
+            <!-- Key Insight -->
+            <div class="key-insight-box">
+                <div class="insight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4"/>
+                        <path d="M12 18v4"/>
+                        <path d="M4.93 4.93l2.83 2.83"/>
+                        <path d="M16.24 16.24l2.83 2.83"/>
+                        <path d="M2 12h4"/>
+                        <path d="M18 12h4"/>
+                        <path d="M4.93 19.07l2.83-2.83"/>
+                        <path d="M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <div class="insight-content">
+                    <h3 class="insight-title">Key Insight</h3>
+                    <p class="insight-text">Large context windows are limited and costly — users and AI alike struggle to retrieve relevant past information in long conversations. By structuring and surfacing key content through highlights, saved snippets, and a library, we reduce reliance on memory and help both sides maintain continuity.</p>
+                </div>
+            </div>
+
+            <!-- User Flow -->
+            <div class="user-flow-section">
+                <div class="user-flow-container">
+                    <img src="assets/context_window_size.png" alt="Context Window Size" class="user-flow-image">
+                </div>
+                <p class="user-flow-caption">The larger the window size, the more context the AI can use to generate a response. Learn more in https://artificialanalysis.ai/models</p>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="content-section">
+            <h2 class="section-title">The Solution</h2>
+            <p class="section-text">
+                We presented a redesigned ChatGPT interface that allows users to save, organize, and revisit key responses using features like snippet bookmarking, categorized folders, a quick-access bar, and note attachments. These tools were seamlessly integrated into the existing UI to enhance usability without overwhelming the user.
+            </p>
+            
+            <div class="two-column-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">Highlighting option</h3>
+                    <p class="feature-text">Users can highlight text in the conversation to save it for later. The highlighted text is saved as a snippet and can be retrieved later.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Categorized folders in a Library</h3>
+                    <p class="feature-text">Users can categorize snippets into folders to organize them better. The folders are displayed in a sidebar and can be accessed quickly. The library is a searchable collection of all the snippets the user has saved.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Navigation Bar</h3>
+                    <p class="feature-text">A navigation bar in long conversations to quickly navigate to the previous messages.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Remixing snippets</h3>
+                    <p class="feature-text">Users can remix snippets to create new snippets. Creating an endless loop of creativity and productivity.</p>
+                </div>
+            </div>
+
+            <!-- High Fidelity Mockups -->
+            <div class="design-system-container" style="margin-top: 4rem;">
+                <img src="assets/highlight_bar.png" alt="Highlighting Bar Mockup" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                On the Highlighting Option screen, users can mark important parts of their conversation directly within the chat interface. Each highlight is visually distinct and stored for easy reference.
+
+                <br><br><b>This solves the user's problem</b> of losing key information in long chats by giving them a quick, effortless way to surface and revisit what matters most. <br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/quick_access_bar.png" alt="High Fidelity Mockup 2" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                On the Quick Access Bar, users can instantly view their highlighted ideas from the current conversation, along with saved files and snippets from other chats—all in one side panel without leaving the conversation.
+
+                <br><br><b>This solves the user's problem</b> of constantly scrolling or switching tabs to retrieve context by keeping key information visible and easily accessible.<br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/library_session.png" alt="Library Session Mockup" class="design-system-image">
+            </div>
+
+            <!-- Design System -->
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <img src="assets/inside_library.png" alt="Design System" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                The Library Session allows users to organize and manage all their saved snippets in categorized folders, creating a structured knowledge base. <br><br><b>This solves the user's problem </b>of losing track of valuable information over time by offering a structured, centralized space to store and retrieve insights efficiently.<br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/snippet_remix.png" alt="Mockup 4" class="design-system-image">
+            </div>
+
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <img src="assets/snippet_remix2.png" alt="Mockup 5" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem;">
+                The Snippet Remix feature allows users to select and combine saved highlights or snippets from different chats to generate new ideas or directions using AI.
+
+                <br><br><b>This solves the user's problem</b> of starting from scratch or losing creative momentum by sparking fresh ideation through previously saved insights.<br><br>
+            </p>
+        </section>
+
+        <!-- Prototypes Section -->
+        <section id="prototypes" class="content-section">
+            <h2 class="section-title">The Prototypes</h2>
+            <p class="section-text">
+                Interactive prototypes demonstrating the key features and user flows.
+            </p>
+
+            <div class="design-system-container" style="margin-top: 2rem;">
+                <video class="design-system-image" controls autoplay loop muted playsinline>
+                    <source src="assets/prototype_video_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <video class="design-system-image" controls autoplay loop muted playsinline>
+                    <source src="assets/prototype_video_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="section-footnote">Highlighting Option</p>
+
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <video class="design-system-image" controls autoplay loop muted playsinline>
+                    <source src="assets/prototype_video_3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <video class="design-system-image" controls autoplay loop muted playsinline>
+                    <source src="assets/prototype_video_4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="section-footnote">Library & Snippet Remix</p>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="content-section">
+            <h2 class="section-title">Results & Possible Impact</h2>
+            <p class="section-text">
+                The new dashboard features are estimated to significantly improve user productivity and satisfaction, 
+                making AI interactions more efficient and insightful.
+            </p>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">~35%</div>
+                    <div class="impact-label">Faster task completion</div>
+                    <p class="impact-description">Estimated time savings through improved context awareness and streamlined workflows</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">~50%</div>
+                    <div class="impact-label">Reduction in repeated prompts</div>
+                    <p class="impact-description">Better context retention means users spend less time re-explaining their needs</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">~40%</div>
+                    <div class="impact-label">Increase in advanced feature usage</div>
+                    <p class="impact-description">Progressive disclosure encourages exploration of powerful capabilities</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learnings Section -->
+        <section class="content-section">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="highlight-box">
+                <ul class="highlight-list">
+                    <li><strong>Context is power:</strong> Giving both users and AI better access to previous prompts can dramatically improve continuity and idea development.</li>
+                    <li><strong>Progressive disclosure:</strong> Showing advanced features only when needed kept the interface clean for beginners</li>
+                    <li><strong>Small UX changes = big impact:</strong> Small UX changes can have a big impact on user productivity, retention and satisfaction.</li>
+                    <li><strong>Flexibility is key:</strong> Allowing users to customize their dashboard view increased engagement significantly</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- What's Next Section -->
+        <section class="content-section">
+            <h2 class="section-title">What's Next</h2>
+            <div class="whats-next-grid">
+                <div class="next-card">
+                    <div class="next-number">01</div>
+                    <h3 class="next-title">User testing</h3>
+                    <p class="next-description">Test the new features with users to validate the UX and gather feedback.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">02</div>
+                    <h3 class="next-title">Prototype memory syncing</h3>
+                    <p class="next-description">Explore connecting these features with ChatGPT’s persistent memory for smoother context handoff.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">03</div>
+                    <h3 class="next-title">Mobile Experience</h3>
+                    <p class="next-description">Design and develop a native mobile app to enable AI productivity on the go.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="case-study.js"></script>
+</body>
+</html>
+

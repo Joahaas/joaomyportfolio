@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid App Redesign Case Study - João Fonseca</title>
+    <link rel="icon" type="image/svg+xml" href="assets/flavicon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="polaroid-case-study.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="space-background">
+        <video id="spaceVideo" loop muted playsinline autoplay>
+            <source id="videoSource" src="assets/Eu_Day.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Back Button -->
+    <a href="index.html#projects" class="back-button" aria-label="Back to projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back to Projects</span>
+    </a>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch" id="themeSwitch" aria-label="Toggle theme">
+        <div class="switch-track">
+            <div class="switch-option" data-theme="0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="switch-slider"></div>
+        </div>
+    </div>
+
+
+    <!-- Case Study Content -->
+    <div class="case-study-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="project-title">Polaroid App Redesign</h1>
+            <p class="project-tagline">Bringing instant photography to the digital age.</p>
+            
+            <div class="project-meta-hero">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Product Designer <br>(Solo Project)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">Sept 2025 - Oct 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Possible Impact</span>
+                    <span class="meta-value">Modern nostalgia</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Video -->
+        <section class="image-section">
+            <div class="project-image-container">
+                <video class="project-image" controls autoplay loop muted playsinline>
+                    <source src="assets/polaroid_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Case Study Navigation -->
+        <nav class="case-study-nav">
+            <ul class="nav-list">
+                <li><a href="#overview" class="nav-item">Overview</a></li>
+                <li><a href="#process" class="nav-item">Process</a></li>
+                <li><a href="#challenge" class="nav-item">Challenge</a></li>
+                <li><a href="#goal" class="nav-item">Goal</a></li>
+                <li><a href="#research" class="nav-item">Research</a></li>
+                <li><a href="#ideation" class="nav-item">Ideation</a></li>
+                <li><a href="#solution" class="nav-item">Solution</a></li>
+                <li><a href="#prototype" class="nav-item">Prototype</a></li>
+                <li><a href="#results" class="nav-item">Results</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <p class="section-text">
+                The Polaroid app needed a complete redesign to appeal to modern users while maintaining the brand's 
+                nostalgic charm. I reimagined the photography experience to combine instant gratification with 
+                creative editing tools and social sharing capabilities.
+            </p>
+            <div class="tags">
+                <span class="tag">Mobile App</span>
+                <span class="tag">Photography</span>
+                <span class="tag">Social</span>
+                <span class="tag">Creative Tools</span>
+            </div>
+        </section>
+
+        <!-- Design Process - Compact Version -->
+        <section id="process" class="content-section">
+            <h2 class="section-title">Design Process</h2>
+            <div class="process-compact">
+                <div class="process-item">
+                    <span class="process-label">Research</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item">
+                    <span class="process-label">Ideation</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item">
+                    <span class="process-label">Design</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item">
+                    <span class="process-label">Prototype</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="challenge" class="content-section">
+            <h2 class="section-title">The Challenge</h2>
+            <p class="section-text">
+                The original Polaroid app felt outdated and failed to capture the magic of instant photography. 
+                Users wanted a seamless experience that honored Polaroid's heritage while offering modern features 
+                like filters, frames, and easy sharing.
+            </p>
+            <div class="highlight-box">
+                <h3 class="highlight-title">Key Problems Identified</h3>
+                <ul class="highlight-list">
+                    <li>Lack of community: Users couldn’t easily explore or connect with others’ Polaroids inside the app.</li>
+                    <li>Disconnected sharing flow: Sharing required exporting to external apps, breaking the Polaroid brand experience.</li>
+                    <li>Limited album functionality: Existing album tools didn’t support collaborative or interactive memory walls with friends or family.</li>
+                    <li>Static user experience: The app lacked an engaging, scrollable feed to discover and emotionally connect with others’ moments.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Goal Section -->
+        <section id="goal" class="content-section">
+            <h2 class="section-title">The Goal</h2>
+            <div class="goal-box">
+                <p class="goal-text"> Design a more social and emotionally engaging Polaroid app experience by introducing community-driven features that allow users to discover, share, and build visual memory walls together—without leaving the Polaroid ecosystem.</p>
+            </div>
+        </section>
+
+        <!-- Research & Findings -->
+        <section id="research" class="content-section">
+            <h2 class="section-title">Research & Findings</h2>
+            <p class="section-text">
+                To inform my redesign, I conducted a mix of competitive benchmarking, user interviews, and a Jobs-to-Be-Done analysis. 
+            </p>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-title">Benchmarking</h3>
+                    <p class="research-text">I analyzed leading photo-sharing apps like Instagram, Tiktok, Pinterest, and Flickr to understand best practices in community-building and content discovery.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">User Interviews</h3>
+                        <p class="research-text">I interviewed 6 Polaroid users to understand their habits and frustrations with the current app.</p>
+                    </div>
+                <div class="research-card">
+                    <h3 class="research-title">Current User Flow</h3>
+                    <p class="research-text">I analyzed the current user flow of the app to understand how users interact with the app.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Jobs-to-be-Done</h3>
+                    <p class="research-text">I conducted a Jobs-to-be-Done analysis to identify the key jobs users were trying to accomplish with the app.</p>
+                </div>
+            </div>
+
+            <!-- Key Insight -->
+            <div class="key-insight-box">
+                <div class="insight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4"/>
+                        <path d="M12 18v4"/>
+                        <path d="M4.93 4.93l2.83 2.83"/>
+                        <path d="M16.24 16.24l2.83 2.83"/>
+                        <path d="M2 12h4"/>
+                        <path d="M18 12h4"/>
+                        <path d="M4.93 19.07l2.83-2.83"/>
+                        <path d="M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <div class="insight-content">
+                    <h3 class="insight-title">Key Insight</h3>
+                    <p class="insight-text">Users are highly creative and value flexibility, sometimes wanting to share spontaneous, unfiltered moments with close friends, and other times curating more intentional, artistic collections to express themselves to a broader audience. The current app didn’t support this duality.</p>
+                </div>
+            </div>
+
+            <!-- User Flow -->
+            <div class="user-flow-section">
+                <div class="user-flow-container">
+                    <img src="assets/userflow_polaroid.png" alt="User Flow" class="user-flow-image">
+                </div>
+                <p class="user-flow-caption">I mapped out the complete user journey to identify key interaction points and optimize the user flow.</p>
+            </div>
+        </section>
+
+        <!-- Ideation & Strategy -->
+        <section id="ideation" class="content-section">
+            <h2 class="section-title">The Ideation & Strategy</h2>
+            <p class="section-text">
+                Based on my research insights, I developed a comprehensive strategy that balances user needs with technical feasibility. My ideation process focused on creating solutions that would feel natural and engaging while addressing the core challenges I identified.
+            </p>
+
+            <!-- Sketches -->
+            <div class="sketch-container">
+                <img src="assets/skectches_polaroid.png" alt="Sketches" class="sketch-image">
+            </div>
+            <p class="section-footnote">Early sketches exploring different concepts</p>
+
+            <!-- Moodboard -->
+            <div class="sketch-container">
+                <img src="assets/moodboard_polaroid.png" alt="Moodboard" class="sketch-image">
+            </div>
+            <p class="section-footnote">Moodboard capturing the visual direction and aesthetic</p>
+
+            <!-- Wireframes -->
+            <div class="wireframe-container">
+                <img src="assets/wireframes_polaroid.png" alt="Wireframes" class="wireframe-image">
+            </div>
+            <p class="section-footnote">Wireframes showing the main user flows</p>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="content-section">
+            <h2 class="section-title">The Solution</h2>
+            <p class="section-text">
+                The new Polaroid app experience was designed to embrace the dual nature of creativity, offering users the ability to capture and share both raw, everyday moments and thoughtfully curated collections. With social walls, collaborative albums, and an intuitive browsing flow, the app becomes a space where connection, expression, and creativity coexist seamlessly.
+            </p>
+
+            <!-- Old Design -->
+            <div class="design-system-container" style="margin-top: 2rem;">
+                <img src="assets/polaroid_old_design.png" alt="Old Design" class="design-system-image">
+            </div>
+            <p class="section-footnote">The old design before the redesign</p>
+            
+            <div class="two-column-grid" style="margin-top: 3rem;">
+                <div class="feature-card">
+                    <h3 class="feature-title">Polaroid Moments</h3>
+                    <p class="feature-text">Scroll through a feed of Polaroid moments shared by others, discover new content, and connect with the community.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Capture & Create</h3>
+                    <p class="feature-text">Scan your Polaroids, choose from a variety of frames and filters, and capture your moments with the community.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Shared walls</h3>
+                    <p class="feature-text">Create and share your own walls with your friends and family, and discover new walls created by others.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Profile</h3>
+                    <p class="feature-text">View your own Polaroid moments and walls, and discover new content created by others.</p>
+                </div>
+            </div>
+
+            <!-- High Fidelity Mockups -->
+            <div class="design-system-container" style="margin-top: 4rem;">
+                <video class="design-system-image" controls autoplay loop muted playsinline>
+                    <source src="assets/polaroid_mockup_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                The new navigation introduces four core sections—Home, Capture, Walls, and Profile—to streamline how users interact with the Polaroid app. Home curates Polaroids from friends, public walls, and challenges, keeping users inspired and connected. Capture allows for quick photo uploads, editing, and sharing. Walls introduces collaborative albums, letting users create or explore shared collections with friends or the community. Profile brings together personal Polaroids, wall contributions, and saved inspirations. 
+                <br><br><b>This navigation solves the user’s problem</b> of disconnected sharing and discovery by making it easier to create, explore, and connect—right from the start.<br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/polaroid_mockup_2.png" alt="High Fidelity Mockup 2" class="design-system-image">
+            </div>
+
+            <div class="design-system-container" style="margin-top: 3rem; padding: 2rem;">
+                <img src="assets/polaroid_mockup_3.png" alt="High Fidelity Mockup 3" class="design-system-image">
+            </div>
+            
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                The Capture screen allows users to either scan existing Polaroids or upload them from their device. Once uploaded, they can tag people, write a caption, and choose where to post it — on their personal wall, in a shared album, or just save it privately. <br><br><b>This solves the user's problem</b> of making physical moments easy to preserve and share digitally, without losing the emotional touch of the Polaroid brand.<br><br>
+            </p>
+
+            <div class="design-system-container" style="padding: 2rem;">
+                <img src="assets/polaroid_mockup_4.png" alt="High Fidelity Mockup 4" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                The Walls screen is where users organize and showcase their Polaroids into thematic collections — like personal albums, trips, or shared memories. Users can create private or collaborative walls, invite friends or family, and choose whether to make them public. <br><br><b>This feature solves the user's problem</b> of storing and sharing Polaroids in a way that feels intentional, creative, and connected — replacing the limitations of traditional albums with dynamic, living memory boards.<br><br>
+            </p>
+
+            <div class="design-system-container" style="padding: 2rem;">
+                <img src="assets/polaroid_mockup_5.png" alt="High Fidelity Mockup 5" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                The Home screen features a scrollable, visually rich feed of Polaroid Moments — real photos from other users, curated walls, and community highlights. It offers a seamless way to explore and get inspired by how others are capturing and sharing their lives. <br><br><b>This solves the user’s problem</b> of feeling isolated in the app by creating a more social, discovery-focused experience that reflects the emotional and analog spirit of the Polaroid brand.<br><br>
+            </p>
+
+            <!-- Design System -->
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <img src="assets/polaroid_design_system.png" alt="Design System" class="design-system-image">
+            </div>
+            <p class="section-footnote">New Design system I designed used throughout the app</p>
+        </section>
+
+        <!-- Prototype Section -->
+        <section id="prototype" class="content-section">
+            <h2 class="section-title">The Prototype</h2>
+            <p class="section-text">
+                Interactive prototype demonstrating the key features and user flows.
+            </p>
+
+            <div class="design-system-container" style="margin-top: 2rem;">
+                <iframe 
+                    src="https://player.vimeo.com/video/1128584997?autoplay=0&loop=0&muted=0" 
+                    class="vimeo-embed"
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="content-section">
+            <h2 class="section-title">Results & Possible Impact</h2>
+            <p class="section-text">
+                The redesigned app introduced new ways to capture, explore, and share Polaroids, creating a more connected, creative experience. By integrating social discovery and personal expression, the platform now fosters stronger engagement, encourages community building, and aligns more closely with Polaroid’s analog, emotional identity.
+            </p>
+        </section>
+
+        <!-- Learnings Section -->
+        <section class="content-section">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="highlight-box">
+                <ul class="highlight-list">
+                    <li><strong>Nostalgia sells:</strong> Users value emotional expression and want flexible ways to share moments, both publicly and privately.</li>
+                    <li><strong>Brand Consistency:</strong> A strong brand identity should extend into digital touchpoints to keep the experience cohesive.</li>
+            </div>
+        </section>
+
+        <!-- What's Next Section -->
+        <section id="whats-next" class="content-section">
+            <h2 class="section-title">What's Next</h2>
+            <div class="whats-next-grid">
+                <div class="next-card">
+                    <div class="next-number">01</div>
+                    <h3 class="next-title">Integrate with Physical Polaroid Printers</h3>
+                    <p class="next-description">Allow users to print their Polaroids directly from the app, creating a seamless physical-digital experience.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">02</div>
+                    <h3 class="next-title">Test</h3>
+                    <p class="next-description">Test the new features with users to validate the UX and gather feedback.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">03</div>
+                    <h3 class="next-title">Content Creators Partnerships</h3>
+                    <p class="next-description">Explore partnerships with content creators to create exclusive content for the app.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="case-study.js"></script>
+</body>
+</html>
+

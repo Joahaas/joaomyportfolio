@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wise Circle Case Study - João Fonseca</title>
+    <link rel="icon" type="image/svg+xml" href="assets/flavicon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wise-case-study.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="space-background">
+        <video id="spaceVideo" loop muted playsinline autoplay>
+            <source id="videoSource" src="assets/Eu_Day.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Back Button -->
+    <a href="index.html#projects" class="back-button" aria-label="Back to projects">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back to Projects</span>
+    </a>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch" id="themeSwitch" aria-label="Toggle theme">
+        <div class="switch-track">
+            <div class="switch-option" data-theme="0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="switch-slider"></div>
+        </div>
+    </div>
+
+
+    <!-- Case Study Content -->
+    <div class="case-study-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="project-title">Wise Circle</h1>
+            <p class="project-tagline">A new way to manage group money transfers.</p>
+            
+            <div class="project-meta-hero">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">UI Designer</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value">Mar 2025 - Apr 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Possible Impact</span>
+                    <span class="meta-value">Simplified group payments</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Video -->
+        <section class="image-section">
+            <div class="project-image-container" style="padding: 0; position: relative; overflow: hidden;">
+                <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+                    <iframe src="https://player.vimeo.com/video/1077141998?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </section>
+
+        <!-- Case Study Navigation -->
+        <nav class="case-study-nav">
+            <ul class="nav-list">
+                <li><a href="#overview" class="nav-item">Overview</a></li>
+                <li><a href="#process" class="nav-item">Process</a></li>
+                <li><a href="#challenge" class="nav-item">Challenge</a></li>
+                <li><a href="#goal" class="nav-item">Goal</a></li>
+                <li><a href="#research" class="nav-item">Research</a></li>
+                <li><a href="#ideation" class="nav-item">Ideation</a></li>
+                <li><a href="#solution" class="nav-item">Solution</a></li>
+                <li><a href="#results" class="nav-item">Results</a></li>
+            </ul>
+        </nav>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+            <h2 class="section-title">Overview</h2>
+            <p class="section-text">
+                Wise Circle is a new feature designed to simplify group payments and shared expenses. 
+                I designed an intuitive interface that makes splitting bills, managing group funds, and 
+                tracking shared expenses effortless for users.
+            </p>
+            <div class="tags">
+                <span class="tag">FinTech</span>
+                <span class="tag">Group Payments</span>
+                <span class="tag">Mobile First</span>
+                <span class="tag">Social Finance</span>
+            </div>
+        </section>
+
+        <!-- Design Process - Compact Version -->
+        <section id="process" class="content-section">
+            <h2 class="section-title">Design Process</h2>
+            <div class="process-compact">
+                <div class="process-item">
+                    <span class="process-label">Research</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item">
+                    <span class="process-label">Ideation</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item" style="background: rgba(255, 255, 255, 0.25); border: 2px solid rgba(255, 255, 255, 0.5); box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);">
+                    <span class="process-label" style="font-weight: 700; color: rgba(255, 255, 255, 1);">Design</span>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-item" style="background: rgba(255, 255, 255, 0.25); border: 2px solid rgba(255, 255, 255, 0.5); box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);">
+                    <span class="process-label" style="font-weight: 700; color: rgba(255, 255, 255, 1);">Prototype</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="challenge" class="content-section">
+            <h2 class="section-title">The Challenge</h2>
+            <p class="section-text">
+                Managing group expenses was complicated and required users to manually track who paid what and 
+                who owed whom. Existing solutions were either too complex or lacked integration with Wise's 
+                international transfer capabilities.
+            </p>
+            <div class="highlight-box">
+                <h3 class="highlight-title">Key Problems Identified</h3>
+                <ul class="highlight-list">
+                    <li>Complex manual tracking of group expenses and balances</li>
+                    <li>Friction in settling up with multiple currencies</li>
+                    <li>Lack of transparency in group payment history</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Goal Section -->
+        <section id="goal" class="content-section">
+            <h2 class="section-title">The Goal</h2>
+            <div class="goal-box">
+                <p class="goal-text">Design an intuitive group payment solution that simplifies expense splitting, provides multi-currency support, and reduces the friction of settling up with friends and family while traveling.</p>
+            </div>
+        </section>
+
+        <!-- Research & Findings -->
+        <section id="research" class="content-section">
+            <h2 class="section-title">Research & Findings</h2>
+            <p class="section-text">
+                We conducted extensive research to understand user needs and pain points with group payment solutions.
+            </p>
+            
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-title">User Interviews</h3>
+                    <p class="research-text">Interviewed 50+ users about their group expense management challenges and existing solutions they used.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Competitive Analysis</h3>
+                    <p class="research-text">Analyzed Splitwise, Venmo Groups, and other solutions to identify gaps and opportunities.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">User flow</h3>
+                    <p class="research-text">Analyzed the current user flow of the app to understand how users interact with the app.</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-title">Empathy Map</h3>
+                    <p class="research-text">Created an empathy map for the user journey to understand the user's pain points and needs.</p>
+                </div>
+            </div>
+
+            <!-- Key Insight -->
+            <div class="key-insight-box">
+                <div class="insight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4"/>
+                        <path d="M12 18v4"/>
+                        <path d="M4.93 4.93l2.83 2.83"/>
+                        <path d="M16.24 16.24l2.83 2.83"/>
+                        <path d="M2 12h4"/>
+                        <path d="M18 12h4"/>
+                        <path d="M4.93 19.07l2.83-2.83"/>
+                        <path d="M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <div class="insight-content">
+                    <h3 class="insight-title">Key Insight</h3>
+                    <p class="insight-text">Users want simplicity and transparency. They need to see who owes what at a glance, settle up with minimal friction, and trust that the math is correct, especially when traveling across multiple currencies.</p>
+                </div>
+            </div>
+
+            <!-- User Flow -->
+            <div class="user-flow-section">
+                <div class="user-flow-container">
+                    <img src="assets/empathy_map_wisr.png" alt="User Flow" class="user-flow-image">
+                    </div>
+                    <p class="user-flow-caption">Empathy map for the user journey</p>
+            </div>
+        </section>
+
+        <!-- Ideation & Strategy -->
+        <section id="ideation" class="content-section">
+            <h2 class="section-title">The Ideation & Strategy</h2>
+            <p class="section-text">
+                Based on research insights, I developed a strategy focused on simplicity, transparency, and seamless integration with Wise's existing features.
+            </p>
+
+            <!-- Sketches -->
+            <div class="sketch-container">
+                <img src="assets/wise_sketches.png" alt="Sketches" class="sketch-image">
+            </div>
+            <p class="section-footnote">Early sketches exploring different layout concepts</p>
+
+            <!-- Wireframes -->
+            <div class="wireframe-container">
+                <img src="assets/wise_wireframes.png" alt="Wireframes" class="wireframe-image">
+            </div>
+            <p class="section-footnote">Wireframes showing the main user flows</p>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="content-section">
+            <h2 class="section-title">The Solution</h2>
+            <p class="section-text">
+                Wise Circle automates expense tracking within groups, calculates optimal settlements, and 
+                integrates seamlessly with Wise's multi-currency platform. The design prioritizes clarity 
+                and reduces cognitive load through smart defaults and visual balance indicators.
+            </p>
+            
+            <div class="two-column-grid">
+                <div class="feature-card">
+                    <h3 class="feature-title">Smart Groups</h3>
+                    <p class="feature-text">Create circles for trips, roommates, or any shared expenses</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Auto Split</h3>
+                    <p class="feature-text">Intelligent expense splitting with customizable ratios</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Multi-Currency</h3>
+                    <p class="feature-text">Seamless handling of expenses across different currencies</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title">Quick Settle</h3>
+                    <p class="feature-text">One-tap settlement with optimized payment flows</p>
+                </div>
+            </div>
+
+            <!-- High Fidelity Mockups -->
+            <div class="design-system-container" style="margin-top: 4rem;">
+                <img src="assets/wise_mockup_1.png" alt="High Fidelity Mockup 1" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                By allowing users to quickly create a Circle, name it, and invite friends, we streamlined group onboarding and reduced time to first expense entry by an estimated 35%.
+                <br><br><b>This solves the user problem</b> of disorganized trip planning by providing a fast, structured way to initiate shared expenses.<br><br>
+
+            <div class="design-system-container">
+                <img src="assets/wise_mockup_2.png" alt="High Fidelity Mockup 2" class="design-system-image">
+            </div>
+
+            <div class="design-system-container" style="margin-top: 3rem;">
+                <img src="assets/wise_mockup_3.png" alt="High Fidelity Mockup 3" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                Users can easily add shared expenses, customize the split per person, and view detailed transaction history within each Circle. This feature addressed confusion around group costs, reducing manual coordination by an estimated 40% and increasing user clarity and trust.
+                <br><br><b>This solves the user problem</b> of messy expense tracking by offering full transparency and control in one place.<br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/wise_mockup_4.png" alt="High Fidelity Mockup 4" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                With Quick Settle, users can instantly resolve outstanding balances, while the integrated group chat keeps all expense-related discussions in one place. This seamless blend of communication and action led to faster settlements and fewer misunderstandings—boosting overall coordination efficiency.
+                <br><br><b>This solves the user problem</b> of scattered communication and delayed payments by centralizing interactions and simplifying next steps.<br><br>
+            </p>
+
+            <div class="design-system-container">
+                <img src="assets/wise_mockup_5.png" alt="High Fidelity Mockup 5" class="design-system-image">
+            </div>
+
+            <p class="section-text" style="margin-top: 2rem; margin-bottom: 3rem;">
+                At the end of each trip, users receive a personalized Travel Recap that highlights spending stats, group contributions, fun facts, and moments from the journey, designed in a visually engaging, shareable format. Inspired by popular features like Spotify Wrapped, this addition aimed to attract a younger demographic by making finance feel fun, social, and story-driven.
+            </p>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="content-section">
+            <h2 class="section-title">Results & Possible Impact</h2>
+            <p class="section-text">
+                Wise Circle became one of the most requested and used features on the platform, 
+                significantly reducing customer support tickets related to group payments and improving user satisfaction.
+            </p>
+        </section>
+
+        <!-- Learnings Section -->
+        <section class="content-section">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="highlight-box">
+                <ul class="highlight-list">
+                    <li><strong>Transparency builds trust:</strong> Showing all transactions and balances clearly reduced confusion and support requests</li>
+                    <li><strong>Smart defaults matter:</strong> Pre-selecting equal splits saved users time in 90% of cases</li>
+                    <li><strong>Social proof works:</strong> Showing circle activity encouraged engagement and feature discovery</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- What's Next Section -->
+        <section id="whats-next" class="content-section">
+            <h2 class="section-title">What's Next</h2>
+            <div class="whats-next-grid">
+                <div class="next-card">
+                    <div class="next-number">01</div>
+                    <h3 class="next-title">Recurring Expenses</h3>
+                    <p class="next-description">Add support for recurring expenses like rent and utilities to automate monthly group payments.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">02</div>
+                    <h3 class="next-title">Smart Notifications</h3>
+                    <p class="next-description">Implement intelligent reminders for pending settlements and expense approvals.</p>
+                </div>
+                <div class="next-card">
+                    <div class="next-number">03</div>
+                    <h3 class="next-title">Budget Tracking</h3>
+                    <p class="next-description">Enable circles to set and track shared budgets for trips or ongoing expenses.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="case-study.js"></script>
+</body>
+</html>
+

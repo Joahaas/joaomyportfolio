@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Fonseca — Product Designer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/flavicon.svg">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Italianno&display=block" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <a href="index.html" class="logo">JOAO.F</a>
+        <nav class="main-nav">
+            <button type="button" class="nav-link nav-button" id="aboutTrigger">About</button>
+        </nav>
+    </header>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch" id="themeSwitch" aria-label="Toggle theme">
+        <div class="switch-track">
+            <div class="switch-option" data-theme="0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="1">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 2v2M12 20v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="switch-option" data-theme="2">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="switch-slider"></div>
+        </div>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="backgroundAudio" loop>
+        <source src="assets/Valley of Dreams - Beautiful Medieval Fantasy Music & Ambience [e5pGt1-Wy04].mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Video Container -->
+    <div class="hero-video-container">
+        <video id="bgVideo1" class="hero-video active" autoplay muted loop playsinline>
+            <source src="assets/Eu_Day.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="bgVideo2" class="hero-video" muted loop playsinline>
+            <source src="assets/Eu_Day.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Welcome Text -->
+        <div class="welcome-text">Hello, welcome to my humble little corner of the internet</div>
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+            <button class="hero-video-button" id="heroVideoBtn">Watch introduction</button>
+            <button class="hero-cta-button" id="heroCta">See my work</button>
+        </div>
+        <!-- Video Credit -->
+        <div class="video-credit">Created with Flow (Google AI video generation tool)</div>
+    </div>
+
+    <!-- Intro Video Modal -->
+    <div class="intro-video-overlay" id="introVideoOverlay" aria-hidden="true">
+        <div class="intro-video-modal" role="dialog" aria-modal="true" aria-label="João introduction video">
+            <button class="video-modal-close" id="closeVideoBtn" aria-label="Close video">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="intro-video-frame">
+                <video id="introVideo" controls preload="metadata" poster="assets/about-video-poster.jpg">
+                    <source src="assets/Screen Recording 2025-10-29 at 15.07.45.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Overlay -->
+    <div class="about-overlay" id="aboutOverlay" aria-hidden="true">
+        <div class="about-modal" role="dialog" aria-modal="true" aria-label="More about João">
+            <button class="about-close" id="closeAboutBtn" aria-label="Close about panel">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="about-modal-content">
+                <div class="about-profile">
+                    <div class="about-photo">
+                        <img src="assets/lindin_2.png" alt="João Fonseca portrait">
+                    </div>
+                    <div class="about-profile-info">
+                        <div class="about-identity">
+                            <h2>João Fonseca</h2>
+                            <p>Product Designer</p>
+                        </div>
+                        <div class="about-links">
+                            <a href="https://www.linkedin.com/in/joaofonseca-ux/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://www.behance.net/joofonseca10" target="_blank" rel="noopener noreferrer">Behance</a>
+                            <a href="assets/CV_Joao_Fonseca_English.pdf" target="_blank" rel="noopener noreferrer">See CV</a>
+                            <a href="mailto:jpedrolimafonseca@gmail.com">Email me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <section class="about-section">
+                        <h3>About Me</h3>
+                        <p>
+                            Hi! I'm João, I’m a designer with a background in Multimedia Art, an Erasmus experience in England, and a Master’s in Design Management.
+                            I worked as the only junior designer at Real Hotels Group, creating digital and print work for multiple assets of the brand.
+                            <br><br>I recently completed a Post-Graduate in Digital Experience Design, where I focused fully on UX. Currently seeking opportunities in the fintech, video game and AI spaces.
+                        </p>
+                        <p>
+                            When I'm not designing, you can find me reading a book, playing video games, or watching a movie.
+                        </p>
+                    </section>
+                    <section class="about-section">
+                        <h3>What I Do</h3>
+                        <div class="about-highlight-grid">
+                            <article class="about-highlight">
+                                <h4>UI/UX Design</h4>
+                                <p>Creating intuitive and beautiful user interfaces.</p>
+                            </article>
+                            <article class="about-highlight">
+                                <h4>Design Systems</h4>
+                                <p>Building scalable and consistent design frameworks.</p>
+                            </article>
+                            <article class="about-highlight">
+                                <h4>Prototyping</h4>
+                                <p>Bringing ideas to life with interactive prototypes.</p>
+                            </article>
+                            <article class="about-highlight">
+                                <h4>AI &amp; Co-Creation</h4>
+                                <p>Using tools like Cursor, Flow, Figma Make &amp; more to increase productivity.</p>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Carousel Section -->
+    <section class="projects-section" id="projectsSection">
+        <button class="back-button" id="backButton">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Back</span>
+        </button>
+
+        <div class="projects-carousel-container">
+            <!-- Navigation Arrows -->
+            <button class="carousel-arrow carousel-arrow-left" id="prevProjectBtn" aria-label="Previous project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="carousel-arrow carousel-arrow-right" id="nextProjectBtn" aria-label="Next project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="projects-carousel" id="projectsCarousel">
+                <div class="project-card" 
+                     data-title="Spoke AI"
+                     data-description="A conversation-first language learning app that helps users practice speaking through realistic, everyday scenarios. I led the UI process from early sketches and wireframes to high-fidelity mockups and interactive prototypes."
+                     data-keywords="AI, Design System, Mobile App, Conversation-first"
+                     data-role="UI Designer (3 Designers)"
+                     data-timeline="Apr 2025 - Jun 2025"
+                     data-impact="Conversational confidence"
+                     data-link="neobank-case-study.html">
+                    <h3 class="card-title">Spoke AI: A Language Learning App</h3>
+                    <img src="assets/spoke-cover.png" alt="Spoke AI">
+                </div>
+                <div class="project-card"
+                     data-title="Open AI: New Features"
+                     data-description="An AI-powered analytics dashboard that transforms complex data into actionable insights for data-driven business decisions. I led the benchmarking and UI design process for the new features."
+                     data-keywords="AI/LLM, Research, Dashboard, Productivity"
+                     data-role="Benchmarking & UI Design (4 Designers)"
+                     data-timeline="Jan 2025 - Feb 2025"
+                     data-impact="Improved Productivity"
+                     data-link="openai-case-study.html">
+                    <h3 class="card-title">Open AI: New Features</h3>
+                    <img src="assets/openai_cover.png" alt="Open AI: New Features">
+                </div>
+                <div class="project-card"
+                     data-title="Polaroid App Redesign"
+                     data-description="A mobile photography app redesign that brings instant photography to the digital age, combining nostalgic charm with modern features. I led the entire process from research to design and development."
+                     data-keywords="Mobile App, Photography, Social, Creative Tools"
+                     data-role="Product Designer (Solo Project)"
+                     data-timeline="Sept 2025 - Oct 2025"
+                     data-impact="Modern nostalgia"
+                     data-link="polaroid-case-study.html">
+                    <h3 class="card-title">Polaroid App Redesign</h3>
+                    <img src="assets/polaroid_cover.png" alt="Polaroid App Redesign">
+                </div>
+                <div class="project-card"
+                     data-title="Wise Circle: A New Feature for Wise"
+                     data-description="A new feature for Wise that simplifies group payments and shared expenses with intelligent splitting and multi-currency support. I led the sketching, final screens design and prototype. Also helped facilitate design critique sessions."
+                     data-keywords="FinTech, Group Payments, Mobile First, Social Finance"
+                     data-role="UI Designer (4 Designers)"
+                     data-timeline="Mar 2025 - Apr 2025"
+                     data-impact="Simplified group payments"
+                     data-link="wise-case-study.html">
+                    <h3 class="card-title">Wise Circle: A New Feature for Wise</h3>
+                    <img src="assets/wise_cover.png" alt="Wise Circle: A new feature for Wise">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Details Panel -->
+        <div class="project-details" id="projectDetails">
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value" id="projectRole">UI Designer</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="meta-label">Timeline</span>
+                    <span class="meta-value" id="projectTimeline">Apr 2025 - Jun 2025</span>
+                </div>
+                <div class="project-meta-item">
+                    <span class="meta-label">Impact</span>
+                    <span class="meta-value" id="projectImpact">Conversational confidence</span>
+                </div>
+            </div>
+            <p class="project-description" id="projectDescription">A conversation-first language learning app that helps users practice speaking through realistic, everyday scenarios.</p>
+            <div class="project-keywords" id="projectKeywords">
+                <span class="keyword">AI</span>
+                <span class="keyword">Design System</span>
+                <span class="keyword">Mobile App</span>
+                <span class="keyword">Conversation-first</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
