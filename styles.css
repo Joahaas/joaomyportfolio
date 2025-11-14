@@ -218,8 +218,7 @@ body.projects-active .switch-slider {
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(2100px, calc(100% - 2rem));
-    max-width: none;
+    width: clamp(1100px, calc(100% - 2rem), 2100px);
     height: clamp(520px, calc(100vh - 180px), 1000px);
     overflow: hidden;
     border-radius: 24px;
@@ -725,7 +724,7 @@ body.about-open {
 body.projects-active .hero-video-container {
     animation: expandVideo 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
     top: 50%;
-    max-width: 100vw;
+    width: 100vw;
     box-shadow: none;
     z-index: 50;
     opacity: 1;
@@ -738,6 +737,14 @@ body.projects-active {
 body.projects-active .hero-video {
     filter: blur(8px);
     transform: scale(1.05);
+}
+
+@media (min-width: 1600px) {
+    .hero-video-container {
+        width: clamp(1400px, calc(100% - 5rem), 2400px);
+        height: clamp(620px, calc(100vh - 140px), 1100px);
+        border-radius: 28px;
+    }
 }
 
 /* Projects Section */
