@@ -71,17 +71,22 @@
 
     <!-- Intro Video Modal -->
     <div class="intro-video-overlay" id="introVideoOverlay" aria-hidden="true">
-        <div class="intro-video-modal" role="dialog" aria-modal="true" aria-label="João introduction video">
+        <div class="intro-video-modal" role="dialog" aria-modal="true" aria-label="João introduction presentation">
             <button class="video-modal-close" id="closeVideoBtn" aria-label="Close video">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
             <div class="intro-video-frame">
-                <video id="introVideo" controls preload="metadata" poster="assets/about-video-poster.jpg">
-                    <source src="assets/Screen Recording 2025-10-29 at 15.07.45.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe
+                    id="introDeck"
+                    class="intro-embed"
+                    style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                    width="100%"
+                    height="100%"
+                    src="https://embed.figma.com/deck/KrRrg9BrtTP6SBAvBdv8cX/Untitled?node-id=1-26457&viewport=-134%2C-107%2C0.62&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
@@ -180,7 +185,7 @@
                      data-role="UI Designer (3 Designers)"
                      data-timeline="Apr 2025 - Jun 2025"
                      data-impact="Conversational confidence"
-                     data-link="neobank-case-study.html">
+                     data-link="spoke-ai-case-study.html">
                     <h3 class="card-title">Spoke AI: A Language Learning App</h3>
                     <img src="assets/spoke-cover.png" alt="Spoke AI">
                 </div>

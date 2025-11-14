@@ -155,6 +155,7 @@ const aboutTrigger = document.getElementById('aboutTrigger');
 const introVideoOverlay = document.getElementById('introVideoOverlay');
 const closeVideoBtn = document.getElementById('closeVideoBtn');
 const introVideo = document.getElementById('introVideo');
+const introDeck = document.getElementById('introDeck');
 const aboutOverlay = document.getElementById('aboutOverlay');
 const closeAboutBtn = document.getElementById('closeAboutBtn');
 const projectsSection = document.getElementById('projectsSection');
@@ -300,6 +301,8 @@ function openIntroVideo() {
         introVideo.play().catch(err => {
             console.log('Intro video play failed:', err);
         });
+    } else if (introDeck) {
+        introDeck.focus();
     }
 }
 

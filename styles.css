@@ -218,9 +218,9 @@ body.projects-active .switch-slider {
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: calc(100% - 4rem);
-    max-width: 1800px;
-    height: calc(100vh - 140px);
+    width: min(2100px, calc(100% - 2rem));
+    max-width: none;
+    height: clamp(520px, calc(100vh - 180px), 1000px);
     overflow: hidden;
     border-radius: 24px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -433,6 +433,7 @@ body.projects-active .switch-slider {
 }
 
 
+.intro-video-frame iframe,
 .intro-video-frame video {
     width: 100%;
     border-radius: 24px;
@@ -442,6 +443,9 @@ body.projects-active .switch-slider {
     aspect-ratio: 16 / 9;
     max-height: 80vh;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.intro-video-frame video {
     object-fit: cover;
     object-position: center 6%;
     transform: scale(1.036);
