@@ -89,7 +89,7 @@ body {
 /* Theme Switch */
 .theme-switch {
     position: fixed;
-    top: 2.5rem;
+    top: 1.25rem;
     right: 4rem;
     z-index: 1000;
     opacity: 0;
@@ -1147,7 +1147,7 @@ body.projects-active .video-text-overlays {
     }
     
     .theme-switch {
-        top: 2rem;
+        top: 1.25rem;
         right: 3rem;
     }
     
@@ -1322,7 +1322,7 @@ body.projects-active .video-text-overlays {
     }
     
     .theme-switch {
-        top: 2rem;
+        top: 1.25rem;
         right: 2rem;
     }
     
@@ -1549,7 +1549,7 @@ body.projects-active .video-text-overlays {
     }
     
     .theme-switch {
-        top: 1.5rem;
+        top: 1.25rem;
         right: 1.5rem;
     }
     
