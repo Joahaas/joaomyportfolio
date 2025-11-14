@@ -151,7 +151,7 @@ body {
     height: 36px;
     background: #ffffff;
     border-radius: 50%;
-    transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.14s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -249,7 +249,7 @@ body.projects-active .switch-slider {
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.65s ease-in-out, filter 0.45s cubic-bezier(0.65, 0, 0.35, 1), transform 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: opacity 0.5s ease-in-out, filter 0.35s cubic-bezier(0.65, 0, 0.35, 1), transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .hero-video.active {
@@ -1091,6 +1091,16 @@ body.projects-active .project-details {
     .project-card {
         width: 900px;
         height: 580px;
+    }
+
+    .projects-carousel-container {
+        height: 720px;
+        padding-top: 1rem;
+    }
+
+    .card-title {
+        top: -3.5rem;
+        bottom: auto;
     }
 }
 
