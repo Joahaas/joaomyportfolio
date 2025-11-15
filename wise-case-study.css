@@ -845,7 +845,8 @@ body.white-mode .back-button {
         font-size: 0.85rem;
     }
     
-    .theme-toggles {
+    .theme-toggles,
+    .theme-switch {
         top: 1.5rem;
         right: 1.5rem;
     }
