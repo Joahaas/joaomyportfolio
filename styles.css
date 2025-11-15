@@ -292,13 +292,14 @@ body.projects-active .switch-slider {
 /* Hero CTA Buttons */
 .hero-buttons {
     position: absolute;
+    inset: auto 0;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, calc(-50% + 110px));
+    width: 100%;
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
     justify-content: center;
+    transform: translateY(calc(-50% + 110px));
     z-index: 10;
     opacity: 0;
     animation: fadeInButton 1.2s ease 1.2s forwards;
@@ -365,11 +366,11 @@ body.projects-active .switch-slider {
 @keyframes fadeInButton {
     0% {
         opacity: 0;
-        transform: translate(-50%, calc(-50% + 130px));
+        transform: translateY(calc(-50% + 130px));
     }
     100% {
         opacity: 1;
-        transform: translate(-50%, calc(-50% + 110px));
+        transform: translateY(calc(-50% + 110px));
     }
 }
 
@@ -1203,7 +1204,8 @@ body.projects-active .video-text-overlays {
     
     .hero-buttons {
         flex-direction: column;
-        transform: translate(-50%, calc(-50% + 120px));
+        align-items: center;
+        transform: translateY(calc(-50% + 120px));
     }
     
     .hero-cta-button,
@@ -1379,7 +1381,8 @@ body.projects-active .video-text-overlays {
     .hero-buttons {
         flex-direction: column;
         gap: 0.65rem;
-        transform: translate(-50%, calc(-50% + 120px));
+        align-items: center;
+        transform: translateY(calc(-50% + 120px));
     }
     
     .hero-cta-button {
@@ -1609,7 +1612,8 @@ body.projects-active .video-text-overlays {
     .hero-buttons {
         flex-direction: column;
         gap: 0.5rem;
-        transform: translate(-50%, calc(-50% + 120px));
+        align-items: center;
+        transform: translateY(calc(-50% + 120px));
     }
     
     .hero-cta-button {
