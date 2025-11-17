@@ -774,45 +774,44 @@ body.white-mode .back-button {
 .whats-next-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .next-card {
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: left;
     transition: all 0.3s ease;
 }
 
 .next-card:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .next-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 1rem;
-    line-height: 1;
 }
 
 .next-title {
     font-size: 1.125rem;
     font-weight: 600;
     color: #ffffff;
-    margin: 0 0 0.75rem 0;
+    margin-bottom: 0.75rem;
 }
 
 .next-description {
     font-size: 0.9375rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
     margin: 0;
 }
 
@@ -855,6 +854,53 @@ body.white-mode .back-button {
     font-size: 0.9375rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.75);
+}
+
+/* Impact Grid */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.impact-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.impact-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.impact-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.75rem;
+}
+
+.impact-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
 }
 
 /* Process Compact */
@@ -1034,8 +1080,17 @@ body.white-mode .back-button {
     
     .two-column-grid,
     .stats-grid,
-    .whats-next-grid {
+    .whats-next-grid,
+    .impact-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-card {
+        padding: 1.75rem 1.25rem;
+    }
+    
+    .impact-number {
+        font-size: 2.75rem;
     }
 }
 
@@ -1092,8 +1147,25 @@ body.white-mode .back-button {
     }
     
     .two-column-grid,
-    .whats-next-grid {
+    .whats-next-grid,
+    .impact-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .impact-card {
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .impact-number {
+        font-size: 2.5rem;
+    }
+    
+    .impact-label {
+        font-size: 0.9375rem;
+    }
+    
+    .impact-description {
+        font-size: 0.8125rem;
     }
     
     .process-step {

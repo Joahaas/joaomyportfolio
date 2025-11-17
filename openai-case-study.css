@@ -792,45 +792,44 @@ body.white-mode .back-button {
 .whats-next-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .next-card {
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.03);
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: left;
     transition: all 0.3s ease;
 }
 
 .next-card:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.15);
-    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .next-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 1rem;
-    line-height: 1;
 }
 
 .next-title {
     font-size: 1.125rem;
     font-weight: 600;
     color: #ffffff;
-    margin: 0 0 0.75rem 0;
+    margin-bottom: 0.75rem;
 }
 
 .next-description {
     font-size: 0.9375rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
     margin: 0;
 }
 
